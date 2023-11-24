@@ -1,0 +1,14 @@
+.card {
+    .img-body {
+        width: 100%;
+        //height: 400px;
+        .image-size {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .description-h {
+        max-height: 300px;
+        overflow: auto;
+    }
+}
