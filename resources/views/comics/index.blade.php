@@ -12,16 +12,13 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title title-h">{{ $comic['title'] }}</h5>
-                            <p class="card-text description-h">{{ $comic['description'] }}</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">{{ $comic['series'] }}</li>
-                            <li class="list-group-item">{{ $comic['sale_date'] }}</li>
-                            <li class="list-group-item">{{ $comic['type'] }}</li>
                             <li class="list-group-item">{{ $comic['price'] }}</li>
                         </ul>
                         <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
+                            <a href="{{ route('comics.show', $comic) }}" class="card-link btn btn-success"><i
+                                    class="fa-regular fa-eye"></i></a>
                             <a href="#" class="card-link">Another link</a>
                         </div>
                     </div>
