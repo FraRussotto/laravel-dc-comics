@@ -3,7 +3,7 @@
 @section('content')
     <h1 class="text-center">{{ $comic['title'] }}</h1>
     <div class="container d-flex">
-        <div class="comic_thumb border">
+        <div class="comic_thumb">
             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
         </div>
         <div class="comic_info border">
