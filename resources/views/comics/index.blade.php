@@ -19,8 +19,9 @@
                         <div class="card-body">
                             <a href="{{ route('comics.show', $comic->id) }}" class="card-link btn btn-success"><i
                                     class="fa-regular fa-eye"></i></a>
-                            <a href="{{ route('comics.edit', $comic->id) }}" class="card-link btn btn-warning"><i
-                                    class="fa-solid fa-pencil"></i></a>
+                            <a href="{{ route('comics.edit', $comic->id) }}"
+                                class="card-link btn btn-warning d-inline-block"><i class="fa-solid fa-pencil"></i></a>
+                            @include('partials.delete')
                         </div>
                     </div>
                 </div>
